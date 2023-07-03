@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Inter:wght@600&family=Montserrat&family=Press+Start+2P&family=Roboto:wght@500&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  height: 4rem;
+}
+
+/* aboveBar styling */
+.abovecontainer {
+  font-family: "Montserrat", sans-serif;
+  /* width: fit-content; */
+  min-height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.aboveBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  z-index: 99%;
+}
+
+.aboveBar ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboveBar ul li {
+  list-style: none;
+}
+
+.abovebar-content {
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #5ba2b6;
+}
+
+.abovebar-content:hover {
+  color: #8fbcf3;
+}
+
+.logotext {
+  font-size: 2em;
+  color: #789ecc;
+  text-decoration: none;
+}
+
+.logotext:hover {
+  color: #8fbcf3;
+}
+
+.abovebar-content a {
+  text-decoration: none;
+  color: #5ba2b6;
+}
+
+.abovebar-content a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  color: white;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .abovebar {
+    text-align: center;
+    flex-direction: column;
+    height: 230px;
+  }
+}
+
+/* Off Canvas Bar  */
+.offcanvas-content {
+  text-decoration: none;
+  color: #789ecc;
+}
+
+.offcanvas-content:hover {
+  color: #8fbcf3;
+}
+
+.offcanvas-body {
+  background-color: #789ecc;
+  color: black;
+}
+
+/* Destination Bar */
+.category-bar {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #789ecc;
+  color: white;
+  padding: 1rem;
+  margin-top: 2em;
+  font-size: 22px;
+}
+
+/* WHOLE main page styling */
+.main {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* homepage (this is the upper half) text styling */
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .herotext {
+  position: relative;
+  max-width: 600px;
+}
+
+.header h1 {
+  color: #789ecc;
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.header span {
+  display: block;
+  font-size: 6vw;
+  font-weight: 900;
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subheader {
+  line-height: 1vw;
+  margin-bottom: 1em;
+}
+
+/* homebutton styling */
+.homebutton {
+  align-items: center;
+  background-color: #789ecc;
+  border: 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.homebutton:hover,
+.homebutton:focus {
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  color: #ffffff;
+}
+
+.homebutton:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.gradient:hover {
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+}
+
+/* homepage styling */
+.homepage {
+  min-height: fit-content;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pokemon banner on homepage */
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateX(-7vw);
+}
+
+.hero-img img {
+  width: 50%;
+  z-index: 20;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero-img:nth-child(even) img {
+  transform: translateX(15vw);
+}
+
+.squirtle-square,
+.bulbasaur-square,
+.charmander-square {
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  left: 30px;
+  width: 20vw;
+  height: 10vw;
+  border-radius: 20px 0 20px 0px;
+}
+
+.squirtle-square {
+  background: #c4dfe4;
+  z-index: -1;
+}
+
+.bulbasaur-square {
+  background: #c4e4d4;
+  z-index: 1;
+  transform: translateX(15vw);
+}
+
+.charmander-square {
+  background: #e4d7c4;
+  z-index: 1;
+}
+
+/* featured items */
+.bottom-div {
+  width: 100%;
+}
+
+.featured-items {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: -1;
+}
+
+.featured-header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #789ecc;
+  padding: 20px;
+}
+
+.featured-list ul {
+  position: relative;
+}
+
+.featured-list ul li {
+  list-style: none;
+}
+
+.new-product {
+  margin-left: 70px;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.new {
+  display: flex;
+  flex-direction: row;
+}
+
+.new img {
+  max-width: 100px;
+  max-height: 100px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.new img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+/* single page styling */
+
+/* all browse containers */
+.browse {
+  display: flex;
+  flex-direction: column;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  cursor: pointer;
+}
+
+/* pagination */
+.pagination {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  background-color: white;
+  color: #789ecc;
+}
+
+.pagination a:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  color: #ffffff;
+}
+
+/* single page styling */
+
+.single-product {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* loading screen styling */
+
+.cart-screen,
+.loading-screen {
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.cart-text,
+.loading-text h1 {
+  font-size: 2vw;
+  font-weight: 300;
+  padding: 20px;
+  color: #789ecc
+}
+
+.loading-text h1 {
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.here {
+  font-size: 2vw;
+  font-weight: 900;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.here:hover {
+  color: #789ecc;
+
+}
+
+/* user profile stuff */
+.userprofile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile-header h1 {
+  font-size: 2vw;
+  font-weight: 300;
+  padding: 20px;
+  color: #789ecc
+}
+
+.profile-table {
+  display: flex;
+  position: right;
+}
+
+.profile-edit {
+  background-color: #789ecc;
+  color: white;
+  border: none;
+  padding: 10px
+}
+
+.profile-checkbox {
+  margin-left: 1em;
+  margin-right: 0.5em
+}
+
+.profile-input {
+  margin-left: 1em;
+}
+
+/* order history  */
+
+.order-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.order-history h1 {
+  font-size: 2vw;
+  font-weight: 300;
+  padding: 20px;
+  color: #789ecc
+}
+
+/* dash-content  */
+.dash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dash-content h1 {
+  font-size: 2vw;
+  font-weight: 300;
+  padding: 20px;
+  color: #789ecc
+}
+
+.dash-card {
+  text-decoration: none;
+  text-align: center;
+  color: #789ecc
+}
+
+.card-body {
+  text-decoration: none;
+}
+
+/* single product  */
+.single-product {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.pokemon-photo img {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+.left-side {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  align-items: flex-start;
+
+}
+
+.right-side select {
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+
+.right-side button {
+  margin-bottom: 1rem;
+  align-items: center;
+  background-color: #789ecc;
+  border: 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+
+.right-side button:hover,
+.right-side button:focus {
+  background-image: linear-gradient(to right, #7cd3ff, #fcd1b1);
+  color: #ffffff;
+}
+
+.right-side button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+
+
+/* Commenting below out for troubleshooting  */
+
+/* miscellaneous styling that has yet to be cleaned up ruhrohs */
+
+.deck {
+  text-decoration: none;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.deck a {
+  text-decoration: none;
+  color: #789ecc;
+}
+
+.quickAddButton {
+  align-items: center;
+}
+
+img.littleguys {
+  width: 40%;
+  height: 40%;
+}
+
+
+.listGroup {
+  position: right;
+}
+
+.pokemonImg {
+  width: 10%;
+  height: 10%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid rgb(193, 85, 178);
+  width: 150px;
+}
+
+.menu>li {
+  margin: 0;
+  background-color: white;
+}
+
+.links {
+  text-decoration: none;
+}
